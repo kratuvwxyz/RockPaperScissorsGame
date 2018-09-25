@@ -15,8 +15,9 @@ Play Scissors < Rock < Paper < Scissors.
 
 - HTML5
 - CSS3
-- Bootstrap
+- w3.css
 - JavaScript
+- jQuery
 - Github for versioning
 
 
