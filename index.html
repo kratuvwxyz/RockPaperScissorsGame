@@ -137,39 +137,39 @@
     <!--:::::::::::::::::::::::::::::::::::::::
   Document Wrapper
 ::::::::::::::::::::::::::::::::::::::::-->
-
+<div id="top">
   <header>
-	  <div class="w3-row w3-container w3-black w3-padding-large">
-		  <div class="w3-container w3-left w3-margin-top">
-		  	<img src="assets/images/rps/rock_paper_scissors__2x-01.svg" height='30px' width='30px' border="0"  /><span class='w3-text-red'>&#160;ROCK&#160;</span>
-		  	<img src="assets/images/rps/rock_paper_scissors__2x-02.svg" height='30px' width='30px' border="0"  /><span class='w3-text-red'>&#160;PAPER&#160;</span>
-		  	<img src="assets/images/rps/rock_paper_scissors__2x-03.svg" height='30px' width='30px' border="0" /><span class='w3-text-red'>&#160;SCISSORS&#160;</span>
-		  </div>
-		  <div class="w3-rest w3-container w3-right w3-margin-top">
-			<p>Press <span class="w3-tag w3-round w3-yellow" style="padding: 3px;"><b class="w3-tag w3-round w3-yellow w3-border w3-border-black w3-padding-small">R</b></span>, <span class="w3-tag w3-round w3-yellow" style="padding: 3px;"><b class="w3-tag w3-round w3-yellow w3-border w3-border-black w3-padding-small">P</b></span> or <span class="w3-tag w3-round w3-yellow" style="padding: 3px;"><b class="w3-tag w3-round w3-yellow w3-border w3-border-black w3-padding-small">S</b></span> to start playing!</p>
-		  </div>
-	  </div>
+    <div class="w3-row w3-container w3-black w3-padding-large">
+      <div class="w3-container w3-left w3-margin-top">
+      <img src="assets/images/rps/rock_paper_scissors__2x-01.svg" height='30px' width='30px' border="0"  /><span class='w3-text-red'>&#160;ROCK&#160;</span>
+      <img src="assets/images/rps/rock_paper_scissors__2x-02.svg" height='30px' width='30px' border="0"  /><span class='w3-text-red'>&#160;PAPER&#160;</span>
+      <img src="assets/images/rps/rock_paper_scissors__2x-03.svg" height='30px' width='30px' border="0" /><span class='w3-text-red'>&#160;SCISSORS&#160;</span>
+      </div>
+      <div class="w3-rest w3-container w3-right w3-margin-top">
+      <p>Press <span class="w3-tag w3-round w3-yellow" style="padding: 3px;"><b class="w3-tag w3-round w3-yellow w3-border w3-border-black w3-padding-small">R</b></span>, <span class="w3-tag w3-round w3-yellow" style="padding: 3px;"><b class="w3-tag w3-round w3-yellow w3-border w3-border-black w3-padding-small">P</b></span> or <span class="w3-tag w3-round w3-yellow" style="padding: 3px;"><b class="w3-tag w3-round w3-yellow w3-border w3-border-black w3-padding-small">S</b></span> to start playing!</p>
+      </div>
+    </div>
   </header>
   <section class="w3-margin-top">
-	<div class="w3-row w3-yellow">
-	  <div class="w3-third w3-container w3-center">
-	   <a id="rock" href="#" class="" ><img src="assets/images/rps/rock_paper_scissors__2x-01.svg" width="70%" border="0" class="w3-center w3-padding-32" /></a>
-	  </div>
-	  <div class="w3-third w3-container w3-center">
-	   <a id="paper" href="#" class="" ><img src="assets/images/rps/rock_paper_scissors__2x-02.svg" width="70%" border="0" class="w3-center w3-padding-32" /></a>
-	  </div>
-	  <div class="w3-third w3-container w3-center">
-	   <a id="scissors" href="#" class="" ><img src="assets/images/rps/rock_paper_scissors__2x-03.svg" width="70%" border="0" class="w3-center w3-padding-32" /></a>
-	  </div>
-	</div>
+    <div class="w3-row w3-yellow">
+      <div class="w3-third w3-container w3-center">
+      <a id="rock" href="#" class="" ><img src="assets/images/rps/rock_paper_scissors__2x-01.svg" width="70%" border="0" class="w3-center w3-padding-32" /></a>
+      </div>
+      <div class="w3-third w3-container w3-center">
+      <a id="paper" href="#" class="" ><img src="assets/images/rps/rock_paper_scissors__2x-02.svg" width="70%" border="0" class="w3-center w3-padding-32" /></a>
+      </div>
+      <div class="w3-third w3-container w3-center">
+      <a id="scissors" href="#" class="" ><img src="assets/images/rps/rock_paper_scissors__2x-03.svg" width="70%" border="0" class="w3-center w3-padding-32" /></a>
+      </div>
+    </div>
   </section>
   <section>
-	  <div class="w3-row w3-black w3-padding-large w3-text-light-gray" id="game">
-		  <p>Hi there! It's you against Champ! Let's Play!</p>
-		  
-	  </div>
-	  
-  </section>
+    <div class="w3-row w3-black w3-padding-large w3-text-light-gray" id="game">
+    <p>Hi there! It's you against Champ! Let's Play!</p>
+    </div>
+  </section> 
+</div>
+
 
 
     <!--:::::::::::::::::::::::::::::::::::::::
@@ -209,11 +209,17 @@
           };
 
           function scrollFunction() {
-              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 || document.documentElement.clientHeight < 500) {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                   document.getElementById("footerCopyright").style.bottom = "-140px";
               } else {
                   document.getElementById("footerCopyright").style.bottom = "0px";
               }
+          }
+
+          var elmnt = document.getElementById('top');
+
+          if (elmnt.clientHeight < 500) {
+            document.getElementById("footerCopyright").style.bottom = "-140px";
           }
 
           $(".w3-btn").hover(function() {
