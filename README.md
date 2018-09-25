@@ -4,11 +4,11 @@ Play Scissors < Rock < Paper < Scissors.
 
 ### How to play?
 
-- Either clik keybord keys or click on icons to select.
-    - `R` for **Rock**
-    - `P` for **Paper**
-    - `S` for **Scissors**
-- You are playing against Champ (Computer which randomly select in between R, P or S)!
+- Either click keybord keys or click on icons to select.
+    - Press `R` for **Rock**
+    - Press `P` for **Paper**
+    - Press `S` for **Scissors**
+- You are playing against Champ (Computer which randomly select in between `R`, `P` or `S`)!
     - Wins, losses or ties add +1 according to the result.
 
 ### Built with
