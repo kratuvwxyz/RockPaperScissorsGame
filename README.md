@@ -29,6 +29,10 @@ Play Scissors < Rock < Paper < Scissors.
 - Visual Studio Code Editor
 - Github for versioning
 
+### Upcoming Versioning
+
+- Multi-player options
+- Chat features
 
 ## CONTACT
 
