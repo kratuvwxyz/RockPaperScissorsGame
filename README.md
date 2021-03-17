@@ -21,7 +21,7 @@ Play Scissors < Rock < Paper < Scissors.
 
 ### Components
 
-- JQuery, Bootstrap
+- JQuery, Bootstrap, SVG
 
 ### Software
 
